@@ -28,11 +28,11 @@ Développeur web full-stack avec 15+ ans d'expérience, spécialisé dans l'éco
 ### Outils & DevOps
 - **Docker** - Conteneurisation
 - **Git** - Gestion de versions
-- **CI/CD** - Intégration continue
+- **CI/CD/CC** - Intégration continue, déploiement continu, communication continue
 - **Linux, AWS S3**
 
 ### Spécialisations
-- **Optimisation de bases de données** - Multiplication de la vitesse par 37
+- **Optimisation de bases de données** - Multiplication de la vitesse par 19
 - **Accessibilité web (RGAA)** - Conformité et bonnes pratiques
 - **Architecture scalable** - Solutions performantes sur gros volumes
 - **Web Scraping & Automatisation** - Traitement de millions d'enregistrements
@@ -42,30 +42,27 @@ Développeur web full-stack avec 15+ ans d'expérience, spécialisé dans l'éco
 ## 💼 Réalisations Notables
 
 ### Performance Backend Critique
-- **Multiplication par 37 de la vitesse** d'une application de veille stratégique
-- **Réduction de 95% des requêtes SQL** (division par 19)
+- **Multiplication par 19 de la vitesse** d'un module d'une application de veille stratégique
+- **Réduction de 97% du nombre de requêtes SQL** (division par 37)
 - Optimisation de bases de données **1 To+** avec résultats mesurables
 
 ### Projet GeoChallenge-Tracker (en cours)
-- **API REST complète** (37 endpoints) avec architecture modulaire Python/FastAPI
+- **API REST complète** (48 endpoints) avec architecture modulaire Python/FastAPI
 - **Interface utilisateur Vue.js** pour le suivi de progression géocaching
-- **Traitement avancé** de données GPX et algorithmes d'optimisation
+- **Traitement avancé** de données GPX multi-sources et algorithmes d'optimisation
 - **Déploiement professionnel** avec CI/CD et Docker
 
 ---
 
 ## 🛠️ Stack Préférée
 
-<div align="center">
-
 | Domaine | Technologies |
 |--------|-------------|
 | **Frontend** | Vue.js • TypeScript • CSS3 |
 | **Backend** | Python • FastAPI • Docker |
-| **BDD** | MongoDB • MySQL • PostgreSQL |
+| **BDD** | MongoDB |
 | **DevOps** | Git • CI/CD • Linux |
 
-</div>
 
 ---
 
