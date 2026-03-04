@@ -42,8 +42,8 @@ Développeur web full-stack avec 15+ ans d'expérience, spécialisé dans l'éco
 ## 💼 Réalisations Notables
 
 ### Performance Backend Critique
-- **Multiplication par 19 de la vitesse** d'un module d'une application de veille stratégique
-- **Réduction de 97% du nombre de requêtes SQL** (division par 37)
+- **Multiplication par 37 de la vitesse** d'un module d'une application de veille stratégique
+- **Réduction de 97% du nombre de requêtes SQL** (division par 19+)
 - Optimisation de bases de données **1 To+** avec résultats mesurables
 
 ### Projet GeoChallenge-Tracker (en cours)
