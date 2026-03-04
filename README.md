@@ -18,7 +18,7 @@ Développeur web full-stack avec 15+ ans d'expérience, spécialisé dans l'éco
 ### Technologies Backend
 - **Python** (FastAPI, Django)
 - **Node.js, Express.js**
-- **PHP**, **Laravel**
+- **PHP / Laravel**
 
 ### Bases de Données
 - **MongoDB** (NoSQL)
@@ -59,8 +59,9 @@ Développeur web full-stack avec 15+ ans d'expérience, spécialisé dans l'éco
 | Domaine | Technologies |
 |--------|-------------|
 | **Frontend** | Vue.js • TypeScript • CSS3 |
-| **Backend** | Python • FastAPI • Docker |
-| **BDD** | MongoDB |
+| **Backend Python** | Python • FastAPI • Docker |
+| **Backend PHP** | PHP • Laravel |
+| **BDD** | MongoDB • MySQL • MariaDB |
 | **DevOps** | Git • CI/CD • Linux |
 
 
