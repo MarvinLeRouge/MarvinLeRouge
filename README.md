@@ -18,7 +18,7 @@ Développeur web full-stack avec 15+ ans d'expérience, spécialisé dans l'éco
 ### Technologies Backend
 - **Python** (FastAPI, Django)
 - **Node.js, Express.js**
-- **PHP**
+- **PHP**, **Laravel**
 
 ### Bases de Données
 - **MongoDB** (NoSQL)
