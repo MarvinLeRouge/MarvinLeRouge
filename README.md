@@ -2,7 +2,7 @@
 
 ---
 
-# 🇫🇷 Version Française
+# Version Française
 
 # Jean Ceugniet — Développeur Full Stack
 
@@ -96,7 +96,7 @@ Ouvert aux opportunités en tant qu'**expert accessibilité web & performance**,
 ---
 ---
 
-# 🇬🇧 English Version
+# English Version
 
 # Jean Ceugniet — Full Stack Developer
 
