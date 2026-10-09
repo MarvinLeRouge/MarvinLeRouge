@@ -145,7 +145,7 @@ Full-stack web developer with **15+ years of experience**, specializing in **Vue
 
 ## 💼 Notable Achievements
 
-### [Projet Engineering Radar](https://github.com/MarvinLeRouge/Engineering-Radar)
+### [Engineering Radar Project](https://github.com/MarvinLeRouge/Engineering-Radar)
 - **Multi-criteria quality audit**, with 8 of 15 planned categories implemented, covering architecture, code quality, testing, security, maintainability, and CI/CD
 - **Structured assessment** based on measurable criteria, with per-category scores and detailed findings
 - **Finding prioritization by severity**, with an interactive summary and direct navigation to individual findings
