@@ -49,20 +49,22 @@ Développeur web full-stack avec **15+ ans d'expérience**, spécialisé dans le
 
 ## 💼 Réalisations Notables
 
+### [Projet Engineering Radar](https://github.com/MarvinLeRouge/Engineering-Radar)
+- **Audit qualité multi-critères**, avec 8 catégories implémentées sur 15 prévues, couvrant architecture, qualité du code, tests, sécurité, maintenabilité et CI/CD
+- **Évaluation structurée** à partir de critères mesurables, avec scores par catégorie et findings détaillés
+- **Priorisation des findings par criticité**, avec sommaire interactif et navigation directe vers les constats
+- **Suivi de l'évolution de la qualité logicielle** à partir de rapports historisés, avec comparaison des résultats et visualisation à l'échelle du portfolio prévue
+
 ### Performance Backend Critique
 - **Multiplication par 37 de la vitesse** d'un module d'une application de veille stratégique
 - **Réduction de 97% du nombre de requêtes SQL** (division par 19+)
 - Optimisation de bases de données **1 To+** avec résultats mesurables
 
-### Projet GeoChallenge-Tracker
+### [Projet GeoChallenge Tracker](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
 - **API REST complète** (48 endpoints) avec architecture modulaire Python/FastAPI
 - **Interface utilisateur Vue.js** pour le suivi de progression géocaching
 - **Traitement avancé** de données GPX multi-sources et algorithmes d'optimisation
 - **Déploiement professionnel** avec CI/CD, Docker et Nginx
-
-### Projet TrelloBoardInit
-- **Outil CLI** de génération automatique de boards Trello depuis un fichier Markdown
-- Automatisation de la création de listes et cartes via l'API Trello
 
 ---
 
@@ -143,20 +145,22 @@ Full-stack web developer with **15+ years of experience**, specializing in **Vue
 
 ## 💼 Notable Achievements
 
+### [Projet Engineering Radar](https://github.com/MarvinLeRouge/Engineering-Radar)
+- **Multi-criteria quality audit**, with 8 of 15 planned categories implemented, covering architecture, code quality, testing, security, maintainability, and CI/CD
+- **Structured assessment** based on measurable criteria, with per-category scores and detailed findings
+- **Finding prioritization by severity**, with an interactive summary and direct navigation to individual findings
+- **SSoftware quality trend tracking** based on historical reports, with result comparisons and portfolio-wide visualization planned
+
 ### Critical Backend Performance
 - **37x speed increase** on a module of a strategic intelligence application
 - **97% reduction in SQL queries** (divided by 19+)
 - Optimization of **1TB+** databases with measurable results
 
-### GeoChallenge-Tracker Project
+### [GeoChallenge Tracker Project](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
 - **Complete REST API** (48 endpoints) with modular Python/FastAPI architecture
 - **Vue.js user interface** for geocaching progress tracking
 - **Advanced processing** of multi-source GPX data and optimization algorithms
 - **Production deployment** with CI/CD, Docker and Nginx
-
-### TrelloBoardInit Project
-- **CLI tool** for automatic Trello board generation from a Markdown file
-- Automation of list and card creation via the Trello API
 
 ---
 
