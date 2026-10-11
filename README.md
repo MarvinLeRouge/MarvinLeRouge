@@ -4,46 +4,13 @@
 
 # Version Française
 
-# Jean Ceugniet — Développeur Full Stack
+# Jean Ceugniet — Développeur Backend / Data Engineering
 
-Développeur web full-stack avec **15+ ans d'expérience**, spécialisé dans les écosystèmes **Vue.js / Python / Laravel**. Expert en optimisation de bases de données et accessibilité RGAA. Passionné par les performances backend et les architectures scalables.
+Développeur backend avec **15+ ans d'expérience**, spécialisé en Python, optimisation SQL et traitement de données. Expérience en optimisation de bases de données à grande échelle, développement d'API et traitement de données multi-sources. J'évolue aujourd'hui vers le **Data Engineering**, en m'appuyant sur mes compétences en développement logiciel, bases de données et conception de pipelines de traitement.
 
 📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
 🌐 **[github.com/MarvinLeRouge](https://github.com/MarvinLeRouge)**
 👔 **[linkedin.com/in/jean-ceugniet-developpeur-web](https://www.linkedin.com/in/jean-ceugniet-developpeur-web/)**
-
----
-
-## 🚀 Compétences & Expertise
-
-### Technologies Frontend
-- **Vue.js** (Composition API, Pinia, Nuxt.js)
-- **HTML5, CSS3, Sass/SCSS** — Expertise avancée, sans dépendance framework
-- **Tailwind CSS** — Intégration avancée
-- **JavaScript (ES6+), TypeScript**
-
-### Technologies Backend
-- **Python** — FastAPI, Django
-- **PHP** — Laravel, architecture MVC, Eloquent ORM
-- **Node.js** — Express.js
-
-### Bases de Données
-- **MongoDB** (NoSQL, Motor async)
-- **MySQL, MariaDB, PostgreSQL** — Expertise optimisation SQL
-- **Indexation avancée, requêtes complexes, optimisation sur volumes 1 To+**
-
-### Outils & DevOps
-- **Docker / Docker Compose** — Conteneurisation multi-services
-- **Git** — Gestion de versions, workflows CI/CD
-- **GitHub Actions** — Pipelines d'intégration continue
-- **Linux, AWS S3, Nginx**
-
-### Spécialisations
-- **Optimisation de bases de données** — Multiplication des performances x37
-- **Accessibilité web (RGAA)** — Conformité et bonnes pratiques
-- **Architecture scalable** — Solutions performantes sur gros volumes
-- **Web Scraping & Automatisation** — Traitement de millions d'enregistrements
-- **Géolocalisation & données GPX** — Traitement multi-sources
 
 ---
 
@@ -57,7 +24,7 @@ Développeur web full-stack avec **15+ ans d'expérience**, spécialisé dans le
 
 ### Performance Backend Critique
 - **Multiplication par 37 de la vitesse** d'un module d'une application de veille stratégique
-- **Réduction de 97% du nombre de requêtes SQL** (division par 19+)
+- **Réduction de 97% du nombre de requêtes SQL** (division par 33+)
 - Optimisation de bases de données **1 To+** avec résultats mesurables
 
 ### [Projet GeoChallenge Tracker](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
@@ -65,6 +32,22 @@ Développeur web full-stack avec **15+ ans d'expérience**, spécialisé dans le
 - **Interface utilisateur Vue.js** pour le suivi de progression géocaching
 - **Traitement avancé** de données GPX multi-sources et algorithmes d'optimisation
 - **Déploiement professionnel** avec CI/CD, Docker et Nginx
+
+---
+
+## 🛠️ Compétences techniques
+
+**Backend & API :** Python • FastAPI • Django • PHP • Laravel • Node.js • Express • API REST
+
+**Bases de données & SQL :** PostgreSQL • MySQL • MariaDB • MongoDB • Motor • Optimisation SQL • Indexation • Partitionnement • Analyse de performances
+
+**Traitement de données :** Python • Web scraping • Automatisation • Traitement de données multi-sources • Géodata • GPX
+
+**Infrastructure & qualité logicielle :** Docker • Docker Compose • Git • GitHub Actions • CI/CD • Tests automatisés • Linux • Nginx
+
+**Frontend :** Vue.js • JavaScript • TypeScript • HTML • CSS • Sass • Tailwind CSS
+
+**Autres domaines d'expertise :** Optimisation de bases de données gros volume • Architecture logicielle • Accessibilité numérique (RGAA)
 
 ---
 
@@ -89,11 +72,13 @@ Développeur web full-stack avec **15+ ans d'expérience**, spécialisé dans le
 
 ---
 
-## 🎯 Open to Opportunities
+## 🎯 Ouvert aux opportunités
 
-Ouvert aux opportunités en tant qu'**expert accessibilité web & performance**, **développeur full stack Vue.js/Python/Laravel**, ou **tech lead** dans des environnements innovants — région PACA ou remote.
+Ouvert aux opportunités en **développement backend Python**, en **développement orienté données** et en **Data Engineering**, dans le cadre de mon évolution vers l'ingénierie des données. Je souhaite mettre à profit mes 15+ ans d'expérience en développement logiciel, mon expertise en optimisation SQL et mes compétences en traitement de données.
 
-**Spécialités :** Vue.js • Python • FastAPI • PHP • Laravel • Optimisation SQL • Accessibilité RGAA • MongoDB • Docker
+📍 Région PACA ou remote.
+
+**Spécialités :** Python • FastAPI • SQL & Optimisation de bases de données • Traitement de données • API REST • ETL / Pipelines de données • Docker • CI/CD
 
 ---
 ---
@@ -102,44 +87,11 @@ Ouvert aux opportunités en tant qu'**expert accessibilité web & performance**,
 
 # Jean Ceugniet — Full Stack Developer
 
-Full-stack web developer with **15+ years of experience**, specializing in **Vue.js / Python / Laravel** ecosystems. Expert in database optimization and RGAA accessibility. Passionate about backend performance and scalable architectures.
+Backend developer with **15+ years of experience**, specializing in Python, SQL optimization, and data processing. Experienced in large-scale database optimization, API development, and multi-source data processing. Currently transitioning towards **Data Engineering**, building on my expertise in software development, databases, and data pipeline design.
 
 📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
 🌐 **[github.com/MarvinLeRouge](https://github.com/MarvinLeRouge)**
 👔 **[linkedin.com/in/jean-ceugniet-developpeur-web](https://www.linkedin.com/in/jean-ceugniet-developpeur-web/)**
-
----
-
-## 🚀 Skills & Expertise
-
-### Frontend Technologies
-- **Vue.js** (Composition API, Pinia, Nuxt.js)
-- **HTML5, CSS3, Sass/SCSS** — Advanced expertise, framework-independent
-- **Tailwind CSS** — Advanced integration
-- **JavaScript (ES6+), TypeScript**
-
-### Backend Technologies
-- **Python** — FastAPI, Django
-- **PHP** — Laravel, MVC architecture, Eloquent ORM
-- **Node.js** — Express.js
-
-### Databases
-- **MongoDB** (NoSQL, async Motor driver)
-- **MySQL, MariaDB, PostgreSQL** — SQL optimization expertise
-- **Advanced indexing, complex queries, optimization on 1TB+ volumes**
-
-### Tools & DevOps
-- **Docker / Docker Compose** — Multi-service containerization
-- **Git** — Version control, CI/CD workflows
-- **GitHub Actions** — Continuous integration pipelines
-- **Linux, AWS S3, Nginx**
-
-### Specializations
-- **Database optimization** — Performance multiplied by 37x
-- **Web accessibility (RGAA/WCAG)** — Compliance and best practices
-- **Scalable architecture** — High-performance solutions on large volumes
-- **Web Scraping & Automation** — Processing millions of records
-- **Geolocation & GPX data** — Multi-source processing
 
 ---
 
@@ -149,11 +101,11 @@ Full-stack web developer with **15+ years of experience**, specializing in **Vue
 - **Multi-criteria quality audit**, with 8 of 15 planned categories implemented, covering architecture, code quality, testing, security, maintainability, and CI/CD
 - **Structured assessment** based on measurable criteria, with per-category scores and detailed findings
 - **Finding prioritization by severity**, with an interactive summary and direct navigation to individual findings
-- **SSoftware quality trend tracking** based on historical reports, with result comparisons and portfolio-wide visualization planned
+- **Software quality trend tracking** based on historical reports, with result comparisons and portfolio-wide visualization planned
 
 ### Critical Backend Performance
-- **37x speed increase** on a module of a strategic intelligence application
-- **97% reduction in SQL queries** (divided by 19+)
+- **37x faster execution** on a module of a strategic intelligence application
+- **97% reduction in SQL queries** (divided by 33+)
 - Optimization of **1TB+** databases with measurable results
 
 ### [GeoChallenge Tracker Project](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
@@ -161,6 +113,22 @@ Full-stack web developer with **15+ years of experience**, specializing in **Vue
 - **Vue.js user interface** for geocaching progress tracking
 - **Advanced processing** of multi-source GPX data and optimization algorithms
 - **Production deployment** with CI/CD, Docker and Nginx
+
+---
+
+## 🛠️ Technical Skills
+
+**Backend & APIs:** Python • FastAPI • Django • PHP • Laravel • Node.js • Express • REST APIs
+
+**Databases & SQL:** PostgreSQL • MySQL • MariaDB • MongoDB • Motor • SQL Optimization • Indexing • Partitioning • Performance Analysis
+
+**Data Processing:** Python • Web Scraping • Automation • Multi-source Data Processing • Geospatial Data • GPX
+
+**Infrastructure & Software Quality:** Docker • Docker Compose • Git • GitHub Actions • CI/CD • Automated Testing • Linux • Nginx
+
+**Frontend:** Vue.js • JavaScript • TypeScript • HTML • CSS • Sass • Tailwind CSS
+
+**Other Areas of Expertise:** Large-Volume Database Optimization • Software Architecture • Digital Accessibility (RGAA)
 
 ---
 
@@ -187,8 +155,10 @@ Full-stack web developer with **15+ years of experience**, specializing in **Vue
 
 ## 🎯 Open to Opportunities
 
-Open to opportunities as an **accessibility & performance expert**, **full stack Vue.js/Python/Laravel developer**, or **tech lead** in innovative environments — PACA region (South of France) or remote.
+Open to opportunities in **Python backend development**, **data-oriented development**, and **Data Engineering**, as I transition towards data engineering. I aim to leverage my 15+ years of software development experience, expertise in SQL optimization, and data processing skills.
 
-**Specialties:** Vue.js • Python • FastAPI • PHP • Laravel • SQL Optimization • RGAA Accessibility • MongoDB • Docker
+📍 PACA region (South of France) or remote.
+
+**Specialties:** Python • FastAPI • SQL & Database Optimization • Data Processing • REST APIs • ETL / Data Pipelines • Docker • CI/CD
 
 [⬆ Retour en haut / Back to top](#)
