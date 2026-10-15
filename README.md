@@ -6,7 +6,7 @@
 
 # Jean Ceugniet — Développeur Backend / Data Engineering
 
-Développeur backend avec **15+ ans d'expérience**, spécialisé en Python, optimisation SQL et traitement de données. Expérience en optimisation de bases de données à grande échelle, développement d'API et traitement de données multi-sources. J'évolue aujourd'hui vers le **Data Engineering**, en m'appuyant sur mes compétences en développement logiciel, bases de données et conception de pipelines de traitement.
+**15+ ans de backend**, et un faible pour les traitements trop lents et les données en désordre. J'ai notamment ramené **de plus de 3 minutes à moins de 5 secondes** un module qu'on croyait cassé, alors qu'il était juste désespérément lent. Je construis des **pipelines de données fiables**, et je monte en compétences sur la **stack Data Engineering moderne** (orchestration, modélisation analytique).
 
 📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
 🌐 **[github.com/MarvinLeRouge](https://github.com/MarvinLeRouge)**
@@ -87,7 +87,7 @@ Ouvert aux opportunités en **développement backend Python**, en **développeme
 
 # Jean Ceugniet — Full Stack Developer
 
-Backend developer with **15+ years of experience**, specializing in Python, SQL optimization, and data processing. Experienced in large-scale database optimization, API development, and multi-source data processing. Currently transitioning towards **Data Engineering**, building on my expertise in software development, databases, and data pipeline design.
+**15+ years of backend development**, and a soft spot for slow processes and messy data. Among other things, I took a module thought to be broken, when it was just painfully slow, **from over 3 minutes down to under 5 seconds**. I build **reliable data pipelines**, and I'm currently upskilling on the **modern Data Engineering stack** (orchestration, analytical modeling).
 
 📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
 🌐 **[github.com/MarvinLeRouge](https://github.com/MarvinLeRouge)**
