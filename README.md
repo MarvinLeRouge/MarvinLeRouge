@@ -1,6 +1,6 @@
 [🇫🇷 Version française](#jean-ceugniet-développeur-backend--data-engineer) | [🇬🇧 English version](#jean-ceugniet-backend-developer--data-engineer)
 
-# Jean Ceugniet, développeur backend / Data Engineer
+# Jean Ceugniet, Développeur Backend / Data Engineer
 
 **15+ ans de backend**, et un faible pour les traitements trop lents et les données en désordre. J'ai notamment ramené **de plus de 3 minutes à moins de 5 secondes** un module qu'on croyait cassé, alors qu'il était juste désespérément lent. Je construis des **pipelines de données fiables**, et je monte en compétences sur la **stack Data Engineering moderne** (orchestration, modélisation analytique).
 
