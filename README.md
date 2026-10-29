@@ -1,164 +1,165 @@
-[🇫🇷 Version française](#version-française) | [🇬🇧 English version](#english-version)
+[🇫🇷 Version française](#jean-ceugniet-développeur-backend--data-engineer) | [🇬🇧 English version](#jean-ceugniet-backend-developer--data-engineer)
 
----
-
-# Version Française
-
-# Jean Ceugniet — Développeur Backend / Data Engineering
+# Jean Ceugniet, développeur backend / Data Engineer
 
 **15+ ans de backend**, et un faible pour les traitements trop lents et les données en désordre. J'ai notamment ramené **de plus de 3 minutes à moins de 5 secondes** un module qu'on croyait cassé, alors qu'il était juste désespérément lent. Je construis des **pipelines de données fiables**, et je monte en compétences sur la **stack Data Engineering moderne** (orchestration, modélisation analytique).
 
-📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
-🌐 **[github.com/MarvinLeRouge](https://github.com/MarvinLeRouge)**
-👔 **[linkedin.com/in/jean-ceugniet-developpeur-web](https://www.linkedin.com/in/jean-ceugniet-developpeur-web/)**
+🌐 **[MarvinLeRouge.dev](https://marvinlerouge.dev)** (fiches projet) | 👔 **[LinkedIn](https://www.linkedin.com/in/jean-ceugniet/)** | 📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
 
----
+## 🧭 Démarche qualité
 
-## 💼 Réalisations Notables
+### [Engineering-Radar](https://github.com/MarvinLeRouge/Engineering-Radar)
+Suivi de la qualité de mes dépôts, fondé sur des preuves. Tous les projets ci-dessous y passent.
+- Plus de 20 outils d'analyse reconnus
+- Référentiel de scoring versionné
+- Constats priorisés par criticité
+- Ré-audits qui mesurent les progrès réels
 
-### [Projet Engineering Radar](https://github.com/MarvinLeRouge/Engineering-Radar)
-- **Audit qualité multi-critères**, avec 8 catégories implémentées sur 15 prévues, couvrant architecture, qualité du code, tests, sécurité, maintenabilité et CI/CD
-- **Évaluation structurée** à partir de critères mesurables, avec scores par catégorie et findings détaillés
-- **Priorisation des findings par criticité**, avec sommaire interactif et navigation directe vers les constats
-- **Suivi de l'évolution de la qualité logicielle** à partir de rapports historisés, avec comparaison des résultats et visualisation à l'échelle du portfolio prévue
+## 📊 Projets data
 
-### Performance Backend Critique
-- **Multiplication par 37 de la vitesse** d'un module d'une application de veille stratégique
-- **Réduction de 97% du nombre de requêtes SQL** (division par 33+)
-- Optimisation de bases de données **1 To+** avec résultats mesurables
+### [JobFlow](https://github.com/MarvinLeRouge/JobFlow), en production
+Pipeline Python qui ingère les alertes emploi de sept fournisseurs, depuis Gmail, vers un Google Sheet unique et dédupliqué.
+- Cinq étapes exécutables isolément, enchaînées par un orchestrateur qui s'arrête à la première erreur
+- Chargement incrémental piloté par un registre d'état
+- Déduplication entre fournisseurs
+- Garde-fou qui bloque la synchronisation tant qu'une erreur n'a pas été acquittée
 
-### [Projet GeoChallenge Tracker](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
-- **API REST complète** (48 endpoints) avec architecture modulaire Python/FastAPI
-- **Interface utilisateur Vue.js** pour le suivi de progression géocaching
-- **Traitement avancé** de données GPX multi-sources et algorithmes d'optimisation
-- **Déploiement professionnel** avec CI/CD, Docker et Nginx
+### [geo_data](https://github.com/MarvinLeRouge/geo_data)
+Pipeline de téléchargement de limites administratives publiques et de corrélation entre sources.
+- Sources : INSEE, geoBoundaries, GeoNames
+- Sortie GeoJSON normalisée par pays et par niveau administratif, données brutes conservées
+- Contrat de sortie versionné et documenté
+- Consommé en production par GeoChallenge-Tracker
 
----
+## 🗺️ Applications
 
-## 🛠️ Compétences techniques
+### [GeoChallenge-Tracker](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
+Application web (FastAPI, MongoDB, Vue.js 3) qui suit la progression des challenges de géocaching, à partir des trouvailles importées en GPX.
+- API de plus de 70 endpoints, architecture hexagonale
+- Règles de challenge décrites comme des arbres d'expression, compilés en requêtes MongoDB
+- Recherches par zone sur index géospatial
+- Audit de sécurité OWASP Top 10 / ASVS, toutes les remarques corrigées
+- Tests utilisateurs menés avec une équipe de géocacheurs expérimentés, aux profils et aux pratiques variés
 
-**Backend & API :** Python • FastAPI • Django • PHP • Laravel • Node.js • Express • API REST
+### [Summit-Stats](https://github.com/MarvinLeRouge/Summit-Stats)
+Application web (Laravel, PostgreSQL, Vue.js 3) d'analyse de traces GPS de randonnée.
+- Pipeline d'analyse développé en TDD : parsing, enrichissement d'altitude, lissage, segmentation par pente
+- Métriques dérivées sur séries temporelles (vitesse verticale, vitesse en mouvement, répartition par pente)
+- Audit de sécurité OWASP Top 10 / ASVS et durcissement de l'API
+- Déploiement continu, seuil de couverture bloquant en CI
 
-**Bases de données & SQL :** PostgreSQL • MySQL • MariaDB • MongoDB • Motor • Optimisation SQL • Indexation • Partitionnement • Analyse de performances
+## ⚡ Optimisation en production
 
-**Traitement de données :** Python • Web scraping • Automatisation • Traitement de données multi-sources • Géodata • GPX
+Sur une plateforme SaaS de veille documentaire, base MySQL de 1 To (8 schémas, plus de 1000 tables) :
 
-**Infrastructure & qualité logicielle :** Docker • Docker Compose • Git • GitHub Actions • CI/CD • Tests automatisés • Linux • Nginx
+- **x37** : de plus de 3 minutes à moins de 5 secondes pour le comptage des éléments liés à chaque ligne d'une liste de résultats. Les traitements redondants ont été supprimés et une requête générique non indexable a été remplacée par des requêtes spécifiques. Les deux versions ont tourné en parallèle en production avant la bascule.
+- **-80 %** sur le temps SQL global d'un autre module, au terme d'une analyse approfondie des logs SQL pour traquer les appels répétés, puis d'une réécriture extensive des requêtes, dont le nombre a été divisé par 33.
+- **Audit de la base** : recherche des anomalies de structure et de performance des index (EXPLAIN ANALYZE, slow query log, performance_schema, logs SQL), puis étude et test de plusieurs solutions, dont les index composites et le partitionnement, et proposition d'un plan de transition.
 
-**Frontend :** Vue.js • JavaScript • TypeScript • HTML • CSS • Sass • Tailwind CSS
+## 🛠️ Compétences
 
-**Autres domaines d'expertise :** Optimisation de bases de données gros volume • Architecture logicielle • Accessibilité numérique (RGAA)
+- **Backend et API** : Python, FastAPI, PHP, Laravel, NestJS, Fastify, API REST, OpenAPI
+- **Bases de données** : MySQL (10+ ans en production), PostgreSQL, MongoDB, SQLite, Redis ; optimisation de requêtes, indexation, migrations versionnées
+- **Data** : pipelines d'ingestion, chargement incrémental, déduplication, data contract, validation de schéma, GeoJSON, séries temporelles
+- **Qualité et infrastructure** : architecture hexagonale, TDD, pytest, Pest, Vitest, Playwright, Docker, Traefik, GitHub Actions, Linux
+- **Frontend** : Vue.js 3, TypeScript, Tailwind CSS, Leaflet
+- **Accessibilité** : audits RGAA et WCAG
 
----
+**Enseignement** : 4 ans de vacations en développement web à l'IUT MMI de Toulon, plus de 200 étudiants.
 
-## 🛠️ Stack Préférée
+## 🔥 Montée en compétences
 
-| Domaine | Technologies |
-|---|---|
-| **Frontend** | Vue.js • TypeScript • CSS3 • Tailwind CSS |
-| **Backend Python** | Python • FastAPI • Docker |
-| **Backend PHP** | PHP • Laravel • Eloquent |
-| **BDD** | MongoDB • MySQL • MariaDB |
-| **DevOps** | Git • GitHub Actions • CI/CD • Linux |
-
----
-
-## 📈 Contributions & Expériences
-
-- **Expertise en performance** : Optimisation de requêtes SQL et backend sur applications critiques
-- **Formation technique** : 3 ans d'enseignement à l'IUT MMI
-- **Géolocalisation & Data** : Projets complexes de traitement de données géographiques
-- **Accessibilité RGAA** : Intégration des bonnes pratiques sur projets professionnels
-
----
+Parcours structuré d'auto-formation en Data Engineering, mené en parallèle de mes projets.
+- **Méthode** : une compétence n'est acquise qu'avec une preuve à l'appui (exercice, lab ou projet)
+- **Point de départ** : bilans initiaux en SQL, bases de données et Python
+- **En cours** : SQL avancé (fonctions de fenêtrage) et optimisation
+- **Au programme** : modélisation de données, ETL / ELT, entrepôt de données, dbt, orchestration, qualité des données
+- **Ensuite** : Spark, Kafka, cloud
 
 ## 🎯 Ouvert aux opportunités
 
-Ouvert aux opportunités en **développement backend Python**, en **développement orienté données** et en **Data Engineering**, dans le cadre de mon évolution vers l'ingénierie des données. Je souhaite mettre à profit mes 15+ ans d'expérience en développement logiciel, mon expertise en optimisation SQL et mes compétences en traitement de données.
-
-📍 Région PACA ou remote.
-
-**Spécialités :** Python • FastAPI • SQL & Optimisation de bases de données • Traitement de données • API REST • ETL / Pipelines de données • Docker • CI/CD
+Développement backend Python, développement orienté données, Data Engineering. Basé à Toulon, ouvert au remote.
 
 ---
----
 
-# English Version
-
-# Jean Ceugniet — Full Stack Developer
+# Jean Ceugniet, Backend Developer / Data Engineer
 
 **15+ years of backend development**, and a soft spot for slow processes and messy data. Among other things, I took a module thought to be broken, when it was just painfully slow, **from over 3 minutes down to under 5 seconds**. I build **reliable data pipelines**, and I'm currently upskilling on the **modern Data Engineering stack** (orchestration, analytical modeling).
 
-📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
-🌐 **[github.com/MarvinLeRouge](https://github.com/MarvinLeRouge)**
-👔 **[linkedin.com/in/jean-ceugniet-developpeur-web](https://www.linkedin.com/in/jean-ceugniet-developpeur-web/)**
+🌐 **[marvinlerouge.dev](https://marvinlerouge.dev)** (project write-ups) | 👔 **[LinkedIn](https://www.linkedin.com/in/jean-ceugniet/)** | 📧 **[jean.ceugniet@gmail.com](mailto:jean.ceugniet@gmail.com)**
 
----
+## 🧭 Quality approach
 
-## 💼 Notable Achievements
+### [Engineering-Radar](https://github.com/MarvinLeRouge/Engineering-Radar)
+Evidence-based quality tracking for my repositories. Every project below goes through it.
+- Over 20 established analysis tools
+- Versioned scoring framework
+- Findings prioritized by severity
+- Re-audits that measure real progress
 
-### [Engineering Radar Project](https://github.com/MarvinLeRouge/Engineering-Radar)
-- **Multi-criteria quality audit**, with 8 of 15 planned categories implemented, covering architecture, code quality, testing, security, maintainability, and CI/CD
-- **Structured assessment** based on measurable criteria, with per-category scores and detailed findings
-- **Finding prioritization by severity**, with an interactive summary and direct navigation to individual findings
-- **Software quality trend tracking** based on historical reports, with result comparisons and portfolio-wide visualization planned
+## 📊 Data projects
 
-### Critical Backend Performance
-- **37x faster execution** on a module of a strategic intelligence application
-- **97% reduction in SQL queries** (divided by 33+)
-- Optimization of **1TB+** databases with measurable results
+### [JobFlow](https://github.com/MarvinLeRouge/JobFlow), in production
+Python pipeline that ingests job alerts from seven providers, from Gmail into a single, deduplicated Google Sheet.
+- Five independently runnable stages, chained by an orchestrator that stops at the first error
+- Incremental loading driven by a state ledger
+- Cross-provider deduplication
+- Gate that blocks the sync until any error has been acknowledged
 
-### [GeoChallenge Tracker Project](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
-- **Complete REST API** (48 endpoints) with modular Python/FastAPI architecture
-- **Vue.js user interface** for geocaching progress tracking
-- **Advanced processing** of multi-source GPX data and optimization algorithms
-- **Production deployment** with CI/CD, Docker and Nginx
+### [geo_data](https://github.com/MarvinLeRouge/geo_data)
+Pipeline that downloads public administrative boundaries and joins them across sources.
+- Sources: INSEE, geoBoundaries, GeoNames
+- GeoJSON output normalized by country and administrative level, raw data kept
+- Versioned, documented output contract
+- Consumed in production by GeoChallenge-Tracker
 
----
+## 🗺️ Applications
 
-## 🛠️ Technical Skills
+### [GeoChallenge-Tracker](https://github.com/MarvinLeRouge/GeoChallenge-Tracker)
+Web application (FastAPI, MongoDB, Vue.js 3) that tracks geocaching challenge progress from finds imported as GPX.
+- API with over 70 endpoints, hexagonal architecture
+- Challenge rules described as expression trees, compiled into MongoDB queries
+- Area searches on a geospatial index
+- OWASP Top 10 / ASVS security audit, every finding fixed
+- User testing with a team of experienced geocachers, with varied profiles and playing styles
 
-**Backend & APIs:** Python • FastAPI • Django • PHP • Laravel • Node.js • Express • REST APIs
+### [Summit-Stats](https://github.com/MarvinLeRouge/Summit-Stats)
+Web application (Laravel, PostgreSQL, Vue.js 3) for hiking GPS track analysis.
+- Analysis pipeline built test-first: parsing, elevation enrichment, smoothing, slope segmentation
+- Derived time-series metrics (vertical speed, moving speed, slope breakdown)
+- OWASP Top 10 / ASVS security audit and API hardening
+- Continuous deployment, blocking coverage threshold in CI
 
-**Databases & SQL:** PostgreSQL • MySQL • MariaDB • MongoDB • Motor • SQL Optimization • Indexing • Partitioning • Performance Analysis
+## ⚡ Production optimization
 
-**Data Processing:** Python • Web Scraping • Automation • Multi-source Data Processing • Geospatial Data • GPX
+On a document-monitoring SaaS platform, 1 TB MySQL database (8 schemas, 1000+ tables):
 
-**Infrastructure & Software Quality:** Docker • Docker Compose • Git • GitHub Actions • CI/CD • Automated Testing • Linux • Nginx
+- **x37**: from over 3 minutes to under 5 seconds to count the items linked to each row of a result list. Redundant processing was removed and a non-indexable generic query was replaced with specific queries. Both versions ran in parallel in production before the switch.
+- **-80%** on another module's overall SQL time, following an in-depth analysis of the SQL logs to track down repeated calls, then an extensive rewrite of the queries, whose number was divided by 33.
+- **Database audit**: tracking down structural and index performance issues (EXPLAIN ANALYZE, slow query log, performance_schema, SQL logs), then studying and testing several solutions, including composite indexes and partitioning, and proposing a transition plan.
 
-**Frontend:** Vue.js • JavaScript • TypeScript • HTML • CSS • Sass • Tailwind CSS
+## 🛠️ Skills
 
-**Other Areas of Expertise:** Large-Volume Database Optimization • Software Architecture • Digital Accessibility (RGAA)
+- **Backend and APIs**: Python, FastAPI, PHP, Laravel, NestJS, Fastify, REST APIs, OpenAPI
+- **Databases**: MySQL (10+ years in production), PostgreSQL, MongoDB, SQLite, Redis; query optimization, indexing, versioned migrations
+- **Data**: ingestion pipelines, incremental loading, deduplication, data contracts, schema validation, GeoJSON, time series
+- **Quality and infrastructure**: hexagonal architecture, TDD, pytest, Pest, Vitest, Playwright, Docker, Traefik, GitHub Actions, Linux
+- **Frontend**: Vue.js 3, TypeScript, Tailwind CSS, Leaflet
+- **Accessibility**: RGAA and WCAG audits
 
----
+**Teaching**: 4 years as an adjunct lecturer in web development at IUT MMI Toulon, 200+ students.
 
-## 🛠️ Preferred Stack
+## 🔥 Upskilling
 
-| Domain | Technologies |
-|---|---|
-| **Frontend** | Vue.js • TypeScript • CSS3 • Tailwind CSS |
-| **Python Backend** | Python • FastAPI • Docker |
-| **PHP Backend** | PHP • Laravel • Eloquent |
-| **Database** | MongoDB • MySQL • MariaDB |
-| **DevOps** | Git • GitHub Actions • CI/CD • Linux |
+A structured Data Engineering self-study path, run alongside my projects.
+- **Method**: a skill only counts as acquired with evidence (exercise, lab or project)
+- **Starting point**: initial assessments in SQL, databases and Python
+- **In progress**: advanced SQL (window functions) and optimization
+- **Next up**: data modeling, ETL / ELT, data warehousing, dbt, orchestration, data quality
+- **Later**: Spark, Kafka, cloud
 
----
+## 🎯 Open to opportunities
 
-## 📈 Contributions & Experience
-
-- **Performance expertise**: SQL query and backend optimization on critical applications
-- **Technical teaching**: 3 years of teaching at IUT MMI
-- **Geolocation & Data**: Complex geographic data processing projects
-- **RGAA Accessibility**: Best practices integration on professional projects
-
----
-
-## 🎯 Open to Opportunities
-
-Open to opportunities in **Python backend development**, **data-oriented development**, and **Data Engineering**, as I transition towards data engineering. I aim to leverage my 15+ years of software development experience, expertise in SQL optimization, and data processing skills.
-
-📍 PACA region (South of France) or remote.
-
-**Specialties:** Python • FastAPI • SQL & Database Optimization • Data Processing • REST APIs • ETL / Data Pipelines • Docker • CI/CD
+Python backend development, data-oriented development, Data Engineering. Based in Toulon, open to remote.
 
 [⬆ Retour en haut / Back to top](#)
